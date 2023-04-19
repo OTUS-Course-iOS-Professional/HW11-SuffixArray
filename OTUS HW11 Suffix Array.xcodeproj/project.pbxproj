@@ -11,6 +11,12 @@
 		BD45B1CD29F076B4002286C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B1CC29F076B4002286C4 /* ContentView.swift */; };
 		BD45B1CF29F076B6002286C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD45B1CE29F076B6002286C4 /* Assets.xcassets */; };
 		BD45B1D229F076B6002286C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD45B1D129F076B6002286C4 /* Preview Assets.xcassets */; };
+		BD45B1DB29F077CF002286C4 /* SuffixArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B1DA29F077CF002286C4 /* SuffixArray.swift */; };
+		BD45B1DD29F077F8002286C4 /* SuffixIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B1DC29F077F8002286C4 /* SuffixIterator.swift */; };
+		BD45B1E029F078E6002286C4 /* SegmentedControlElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B1DF29F078E6002286C4 /* SegmentedControlElement.swift */; };
+		BD45B1E229F079E6002286C4 /* SegmentedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B1E129F079E6002286C4 /* SegmentedViewModel.swift */; };
+		BD45B1E429F07A41002286C4 /* TextFieldElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B1E329F07A41002286C4 /* TextFieldElement.swift */; };
+		BD45B1E629F07AEA002286C4 /* TextFieldElementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B1E529F07AEA002286C4 /* TextFieldElementViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		BD45B1CC29F076B4002286C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD45B1CE29F076B6002286C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD45B1D129F076B6002286C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD45B1DA29F077CF002286C4 /* SuffixArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixArray.swift; sourceTree = "<group>"; };
+		BD45B1DC29F077F8002286C4 /* SuffixIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixIterator.swift; sourceTree = "<group>"; };
+		BD45B1DF29F078E6002286C4 /* SegmentedControlElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlElement.swift; sourceTree = "<group>"; };
+		BD45B1E129F079E6002286C4 /* SegmentedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewModel.swift; sourceTree = "<group>"; };
+		BD45B1E329F07A41002286C4 /* TextFieldElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldElement.swift; sourceTree = "<group>"; };
+		BD45B1E529F07AEA002286C4 /* TextFieldElementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldElementViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,9 @@
 		BD45B1C929F076B4002286C4 /* OTUS HW11 Suffix Array */ = {
 			isa = PBXGroup;
 			children = (
+				BD45B1E829F07C7E002286C4 /* ViewModels */,
+				BD45B1E729F07C76002286C4 /* Views */,
+				BD45B1DE29F07885002286C4 /* Suffix */,
 				BD45B1CA29F076B4002286C4 /* OTUS_HW11_Suffix_ArrayApp.swift */,
 				BD45B1CC29F076B4002286C4 /* ContentView.swift */,
 				BD45B1CE29F076B6002286C4 /* Assets.xcassets */,
@@ -65,6 +80,33 @@
 				BD45B1D129F076B6002286C4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD45B1DE29F07885002286C4 /* Suffix */ = {
+			isa = PBXGroup;
+			children = (
+				BD45B1DA29F077CF002286C4 /* SuffixArray.swift */,
+				BD45B1DC29F077F8002286C4 /* SuffixIterator.swift */,
+			);
+			path = Suffix;
+			sourceTree = "<group>";
+		};
+		BD45B1E729F07C76002286C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD45B1DF29F078E6002286C4 /* SegmentedControlElement.swift */,
+				BD45B1E329F07A41002286C4 /* TextFieldElement.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD45B1E829F07C7E002286C4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BD45B1E529F07AEA002286C4 /* TextFieldElementViewModel.swift */,
+				BD45B1E129F079E6002286C4 /* SegmentedViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD45B1CD29F076B4002286C4 /* ContentView.swift in Sources */,
+				BD45B1E629F07AEA002286C4 /* TextFieldElementViewModel.swift in Sources */,
 				BD45B1CB29F076B4002286C4 /* OTUS_HW11_Suffix_ArrayApp.swift in Sources */,
+				BD45B1DD29F077F8002286C4 /* SuffixIterator.swift in Sources */,
+				BD45B1E429F07A41002286C4 /* TextFieldElement.swift in Sources */,
+				BD45B1E229F079E6002286C4 /* SegmentedViewModel.swift in Sources */,
+				BD45B1DB29F077CF002286C4 /* SuffixArray.swift in Sources */,
+				BD45B1E029F078E6002286C4 /* SegmentedControlElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
