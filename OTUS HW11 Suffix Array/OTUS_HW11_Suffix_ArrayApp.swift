@@ -12,8 +12,6 @@ struct OTUS_HW11_Suffix_ArrayApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(TextFieldElementViewModel())
-                .environmentObject(SegmentedViewModel())
         }
     }
 }
